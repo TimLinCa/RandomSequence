@@ -56,17 +56,18 @@ The Fisher-Yates shuffle is the industry-standard algorithm for this problem. It
 ### How It Works
 ```mermaid
 flowchart TD
-    A([Step 1 — build identity array\nFill 1 2 3 … 10000])
-    --> B([Set i = n − 1\nStart from the last index])
+    A([Step 1: Build identity array\nFill 1, 2, 3 ... 10000])
+    --> B([Set i = n - 1\nStart from the last index])
     --> C{Is i > 0?}
 
-    C -- Yes --> D([Pick random j in 0 … i\nUniform pick from unshuffled range])
-    --> E([Swap arr i ↔ arr j\nElement locked into final position])
-    --> F([i = i − 1\nShrink the unshuffled region])
+    C -- Yes --> D([Pick random j in 0 ... i\nUniform pick from unshuffled range])
+    --> E([Swap arr i and arr j\nElement locked into final position])
+    --> F([i = i - 1\nShrink the unshuffled region])
     --> C
 
-    C -- No --> G([Done ✓])
+    C -- No --> G([Done])
 ```
+
 ---
 
 ## Unit Tests
