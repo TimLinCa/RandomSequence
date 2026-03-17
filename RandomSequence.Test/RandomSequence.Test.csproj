@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RandomNumberList\RandomSequence.csproj" />
+    <ProjectReference Include="..\RandomSequence\RandomSequence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
